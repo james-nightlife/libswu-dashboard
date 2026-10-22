@@ -1,4 +1,45 @@
-:root {
+@import "tailwindcss";
+
+@layer base {
+  h1 {
+    @apply sm:text-2xl text-xl font-bold;
+  }
+  h2 {
+    @apply text-xl font-bold;
+  }
+  h3 {
+    @apply text-lg font-bold;
+  }
+  h4 {
+    @apply text-base font-bold;
+  }
+  h5 {
+    @apply text-sm font-bold;
+  }
+  h6 {
+    @apply text-xs font-bold;
+  }
+  input {
+    @apply border rounded p-1;
+  }
+  button {
+    @apply bg-blue-500 hover:bg-blue-400 cursor-pointer text-white px-4 py-2 rounded;
+  }
+  td {
+    @apply border p-2;
+  }
+  th {
+    @apply border p-2 bg-gray-200;
+  }
+  a {
+    @apply text-blue-500 hover:text-blue-900
+  }
+  select {
+    @apply border rounded p-1
+  }
+}
+
+/*:root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -108,4 +149,4 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
+}*/
